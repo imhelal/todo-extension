@@ -1,0 +1,15 @@
+{
+  "name": "dual-tasks-extension",
+  "version": "2.2.0",
+  "private": true,
+  "description": "Chrome extension for business, client and personal tasks side by side, with client sites on a monthly maintenance checklist. The extension has no dependencies and no build step; jsdom is for the tests only.",
+  "type": "module",
+  "scripts": {
+    "test": "node test/logic.test.mjs && node test/projects.test.mjs && node test/store.test.mjs && node test/reminders.test.mjs && node test/ui.test.mjs",
+    "pack": "node tools/pack.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0"
+  },
+  "license": "MIT"
+}
